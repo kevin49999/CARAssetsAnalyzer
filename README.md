@@ -20,3 +20,5 @@ Once you have the `.car` file for your assets, save the ouptut below to a `.json
 `assetutil -I Assets.car > assets.json`
 
 In the Xcode project from here, replace the info in `assets.json`, add the assets from your project and run. There may be a more obvious / automated/ better way to do this. If you know of one let me know :sunglasses:
+
+![Screenshot](https://github.com/longhorn499/CARAssetsAnalyzer/raw/master/screenshot.png)  
