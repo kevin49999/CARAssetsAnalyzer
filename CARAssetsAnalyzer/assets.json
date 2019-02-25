@@ -1,0 +1,63 @@
+[
+    {
+        "AssetStorageVersion" : "IBCocoaTouchImageCatalogTool-10.1",
+        "Authoring Tool" : "@(#)PROGRAM:CoreThemeDefinition  PROJECT:CoreThemeDefinition-347.1\n",
+        "CoreUIVersion" : 498,
+        "DumpToolVersion" : 498.4599999999998976,
+        "Key Format" : [
+            "kCRThemeAppearanceName",
+            "kCRThemeScaleName",
+            "kCRThemeIdiomName",
+            "kCRThemeSubtypeName",
+            "kCRThemeDeploymentTargetName",
+            "kCRThemeGraphicsClassName",
+            "kCRThemeMemoryClassName",
+            "kCRThemeDisplayGamutName",
+            "kCRThemeDirectionName",
+            "kCRThemeSizeClassHorizontalName",
+            "kCRThemeSizeClassVerticalName",
+            "kCRThemeIdentifierName",
+            "kCRThemeElementName",
+            "kCRThemePartName",
+            "kCRThemeStateName",
+            "kCRThemeValueName",
+            "kCRThemeDimension1Name",
+            "kCRThemeDimension2Name"
+        ],
+        "MainVersion" : "@(#)PROGRAM:CoreUI  PROJECT:CoreUI-498.40.1\n",
+        "Platform" : "ios",
+        "PlatformVersion" : "12.1",
+        "SchemaVersion" : 2,
+        "StorageVersion" : 15
+    },
+    {
+        "AssetType" : "Vector",
+        "Colorspace" : "srgb",
+        "Height" : 9,
+        "Idiom" : "universal",
+        "Name" : "ghostOne",
+        "RenditionName" : "ghostOne",
+        "SizeOnDisk" : 130000,
+        "Width" : 16
+    },
+    {
+        "AssetType" : "Vector",
+        "Colorspace" : "srgb",
+        "Height" : 9,
+        "Idiom" : "universal",
+        "Name" : "ghostTwo",
+        "RenditionName" : "ghostTwo",
+        "SizeOnDisk" : 57000,
+        "Width" : 16
+    },
+    {
+        "AssetType" : "Vector",
+        "Colorspace" : "srgb",
+        "Height" : 9,
+        "Idiom" : "universal",
+        "Name" : "ghostThree",
+        "RenditionName" : "ghostThree",
+        "SizeOnDisk" : 28000,
+        "Width" : 16
+    }
+]
