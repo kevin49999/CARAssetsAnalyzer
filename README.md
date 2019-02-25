@@ -26,4 +26,9 @@ Once you have the `Assets.car` file, save the ouptut below to a `.json` file
 assetutil -I Assets.car > assets.json
 ```
 
-In this Xcode project, replace the info in `assets.json` with what was generated, add / duplicate the assets from your project here -> run. There's probably an obvious/automated/better way to do this. If you know of one let me know :sunglasses:
+In this Xcode project:
+* Replace the info in `assets.json` with what was generated
+* Add the assets from your project to the assets folder
+* -> Run
+
+There's probably an obvious/automated/better way to do this. If you know of one let me know :sunglasses: 
