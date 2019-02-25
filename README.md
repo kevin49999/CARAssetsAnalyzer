@@ -10,7 +10,7 @@ https://blog.timac.org/2018/1018-reverse-engineering-the-car-file-format/
 
 https://github.com/tinymind/LSUnusedResources - for finding unused assets in your Xcode project, which is what I was trying to do in the first place (find unused + large assets)
 
-I also wanted to see all the images from my project with size info and show how they would appear on device without constraints.
+I wanted to see all the images from my project with size info and show how they would appear on device without constraints.
 
 ## How To
 
