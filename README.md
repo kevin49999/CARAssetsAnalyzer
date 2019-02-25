@@ -20,10 +20,10 @@ Or if you use fastlane: https://docs.fastlane.tools/actions/gym/
 
 By changing the extension from `.ipa` to `.zip`, extracting, and opening package contents for your App, you can find your assets, frameworks, storyboards, etc.
 
-Once you have the `Assets.car` file for your assets, save the ouptut below to a `.json` file
+Once you have the `Assets.car` file, save the ouptut below to a `.json` file
 
 ```sh
-assetutil -I Assets.car > assets.json`
+assetutil -I Assets.car > assets.json
 ```
 
-In this Xcode project, replace the info in `assets.json` with wht was generated, add / duplicate the assets from your project here -> run. There's probably an obvious/automated/better way to do this. If you know of one let me know :sunglasses:
+In this Xcode project, replace the info in `assets.json` with what was generated, add / duplicate the assets from your project here -> run. There's probably an obvious/automated/better way to do this. If you know of one let me know :sunglasses:
