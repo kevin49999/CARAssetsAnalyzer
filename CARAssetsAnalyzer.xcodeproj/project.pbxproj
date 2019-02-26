@@ -14,7 +14,7 @@
 		52E58896221DF339007B56EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E58894221DF339007B56EB /* LaunchScreen.storyboard */; };
 		52E588A1221DF33A007B56EB /* CARAssetsAnalyzerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E588A0221DF33A007B56EB /* CARAssetsAnalyzerTests.swift */; };
 		52E588AC221DF457007B56EB /* assets.json in Resources */ = {isa = PBXBuildFile; fileRef = 52E588AB221DF457007B56EB /* assets.json */; };
-		52E588AE221DFF24007B56EB /* AssetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E588AD221DFF24007B56EB /* AssetInfo.swift */; };
+		52E588AE221DFF24007B56EB /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E588AD221DFF24007B56EB /* Asset.swift */; };
 		52E588B0221E0195007B56EB /* AssetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E588AF221E0195007B56EB /* AssetTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +40,7 @@
 		52E588A0221DF33A007B56EB /* CARAssetsAnalyzerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CARAssetsAnalyzerTests.swift; sourceTree = "<group>"; };
 		52E588A2221DF33A007B56EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52E588AB221DF457007B56EB /* assets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = assets.json; sourceTree = "<group>"; };
-		52E588AD221DFF24007B56EB /* AssetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetInfo.swift; sourceTree = "<group>"; };
+		52E588AD221DFF24007B56EB /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		52E588AF221E0195007B56EB /* AssetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				52E5888B221DF338007B56EB /* AppDelegate.swift */,
-				52E588AD221DFF24007B56EB /* AssetInfo.swift */,
+				52E588AD221DFF24007B56EB /* Asset.swift */,
 				52E588AB221DF457007B56EB /* assets.json */,
 				52E58892221DF339007B56EB /* Assets.xcassets */,
 				52E588AF221E0195007B56EB /* AssetTableViewCell.swift */,
@@ -210,7 +210,7 @@
 				52E5888E221DF338007B56EB /* ViewController.swift in Sources */,
 				52E5888C221DF338007B56EB /* AppDelegate.swift in Sources */,
 				52E588B0221E0195007B56EB /* AssetTableViewCell.swift in Sources */,
-				52E588AE221DFF24007B56EB /* AssetInfo.swift in Sources */,
+				52E588AE221DFF24007B56EB /* Asset.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

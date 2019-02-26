@@ -1,5 +1,5 @@
 //
-//  AssetInfo.swift
+//  Asset.swift
 //  CARAssetsAnalyzer
 //
 //  Created by Kevin Johnson on 2/20/19.
@@ -10,7 +10,7 @@ import Foundation
 
 typealias JSON = [String: Any]
 
-struct AssetInfo {
+struct Asset {
     let imageName: String
     let bytes: Int64
     
