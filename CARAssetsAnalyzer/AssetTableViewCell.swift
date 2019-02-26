@@ -34,7 +34,7 @@ class AssetTableViewCell: UITableViewCell {
     }
 
     func configure(viewModel: ViewModel) {
-        assetImageView.image = UIImage(named: viewModel.imageName) // show something if image missing?
+        assetImageView.image = UIImage(named: viewModel.imageName)
         nameLabel.text = viewModel.imageName
         sizeLabel.text = viewModel.sizeString
     }

@@ -8,9 +8,6 @@
 
 import UIKit
 
-// TODO: needed: Add scroll to top when tapping navigation item
-// TODO: less needed: search.. can display idiom, file extension, sort by duplicate items
-
 class ViewController: UIViewController {
     
     // MARK: - Properties
@@ -34,30 +31,26 @@ class ViewController: UIViewController {
     
     func loadAssets() {
         DispatchQueue.global(qos: .userInitiated).async {
-            guard let fileURL = Bundle.main.resourceURL?.appendingPathComponent("assets.json") else {
+            guard let assetsFileURL = Bundle.main.resourceURL?.appendingPathComponent("assets.json") else {
                 assertionFailure("Missing assets.json file 👻")
                 return
             }
             
-            guard let data = try? Data(contentsOf: fileURL),
-                let anyObject = try? JSONSerialization.jsonObject(with: data),
-                let jsonObjects: [JSON] = anyObject as? [JSON] else {
+            do {
+                let assetsData = try Data(contentsOf: assetsFileURL)
+                let jsonObject = try JSONSerialization.jsonObject(with: assetsData)
+                guard let jsonObjects: [JSON] = jsonObject as? [JSON] else {
+                    assertionFailure("Could not cast jsonObject to [JSON] 👻")
                     return
-            }
-            
-            
-            /// don't add duplicates though! @2x @3x,
-            self.assetInfo = jsonObjects.compactMap { AssetInfo(json: $0) }
-            
-//            for json in jsonObjects {
-//                if let assetInfo = AssetInfo(json: json),
-//                    !self.assetInfo.contains(where: { $0.imageName == assetInfo.imageName }) {
-//                    self.assetInfo.append(assetInfo)
-//                }
-//            }
-            
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
+                }
+
+                self.assetInfo = jsonObjects.compactMap { AssetInfo(json: $0) }
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+                
+            } catch let error {
+                assertionFailure("Error serializing json: \(error.localizedDescription) 👻")
             }
         }
     }
@@ -112,7 +105,6 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: AssetTableViewCell = tableView.dequeueReusableCell(withIdentifier: "AssetTableViewCell") as! AssetTableViewCell
-        
         let info = assetInfo[indexPath.row]
         let imageName = info.imageName
         let sizeString = byteCountFormatter.string(fromByteCount: info.bytes)
