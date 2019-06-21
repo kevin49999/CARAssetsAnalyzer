@@ -19,7 +19,6 @@ struct Asset {
             let bytes = json["SizeOnDisk"] as? Int64 else {
                 return nil
         }
-        
         self.imageName = imageName
         self.bytes = bytes
     }

@@ -46,7 +46,6 @@ class ViewController: UIViewController {
             assertionFailure("Missing assets.json file 👻")
             return nil
         }
-        
         do {
             let assetsData = try Data(contentsOf: assetsFileURL)
             let jsonObject = try JSONSerialization.jsonObject(with: assetsData)
@@ -65,39 +64,33 @@ class ViewController: UIViewController {
     
     @IBAction func tapActionBarButtonItem(_ sender: UIBarButtonItem) {
         let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-        
         let bySizeTitle = NSLocalizedString("Filter by Size", comment: "")
         let bySizeAction = UIAlertAction(title: bySizeTitle, style: .default, handler: { _ in
             self.assets.sort(by: { $0.bytes > $1.bytes })
             self.tableView.reloadData()
         })
         alertController.addAction(bySizeAction)
-        
         let bySizeReversedTitle = NSLocalizedString("Filter by Size - Reversed", comment: "")
         let bySizeReversedAction = UIAlertAction(title: bySizeReversedTitle, style: .destructive, handler: { _ in
             self.assets.sort(by: { $0.bytes < $1.bytes })
             self.tableView.reloadData()
         })
         alertController.addAction(bySizeReversedAction)
-        
         let byNameTitle = NSLocalizedString("Filter by Name", comment: "")
         let byNameAction = UIAlertAction(title: byNameTitle, style: .default, handler: { _ in
             self.assets.sort(by: { $0.imageName < $1.imageName })
             self.tableView.reloadData()
         })
         alertController.addAction(byNameAction)
-        
         let byNameReversedTitle = NSLocalizedString("Filter by Name - Reversed", comment: "")
         let byNameReversedAction = UIAlertAction(title: byNameReversedTitle, style: .destructive, handler: { _ in
             self.assets.sort(by: { $0.imageName > $1.imageName })
             self.tableView.reloadData()
         })
         alertController.addAction(byNameReversedAction)
-        
         let cancelTitle = NSLocalizedString("Cancel", comment: "")
         let cancelAction = UIAlertAction(title: cancelTitle, style: .cancel, handler: nil)
         alertController.addAction(cancelAction)
-        
         present(alertController, animated: true)
     }
 }

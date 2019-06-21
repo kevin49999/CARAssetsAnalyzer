@@ -155,9 +155,11 @@
 				TargetAttributes = {
 					52E58887221DF338007B56EB = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					52E5889B221DF33A007B56EB = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 52E58887221DF338007B56EB;
 					};
 				};
@@ -373,7 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J7GUD4XVP9;
+				DEVELOPMENT_TEAM = X6XFU66KA9;
 				INFOPLIST_FILE = CARAssetsAnalyzer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -381,7 +383,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = FFR.CARAssetsAnalyzer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -391,7 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J7GUD4XVP9;
+				DEVELOPMENT_TEAM = X6XFU66KA9;
 				INFOPLIST_FILE = CARAssetsAnalyzer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -399,7 +401,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = FFR.CARAssetsAnalyzer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -410,6 +412,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6XFU66KA9;
 				INFOPLIST_FILE = CARAssetsAnalyzerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -418,7 +421,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = FFR.CARAssetsAnalyzerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CARAssetsAnalyzer.app/CARAssetsAnalyzer";
 			};
@@ -430,6 +433,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6XFU66KA9;
 				INFOPLIST_FILE = CARAssetsAnalyzerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -438,7 +442,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = FFR.CARAssetsAnalyzerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CARAssetsAnalyzer.app/CARAssetsAnalyzer";
 			};
